@@ -1,20 +1,17 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <NumberCounter :count="1" />
-  <CounterNumber />
+ <div>
+    <HeaderMenu />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import NumberCounter  from './components/test.vue'
-import CounterNumber  from './components/counter.vue'
+import HeaderMenu from './components/header.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    NumberCounter,
-    CounterNumber,
+    HeaderMenu,
   }
 }
 </script>
